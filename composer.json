@@ -1,0 +1,27 @@
+{
+  "name": "dmytroborysovskiy/tdd",
+  "description": "A simple TDD example while reading the book \"Test Driven Development: By Example\" by Kent Beck",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dmytro Borysovskyi",
+      "email": "bbbara10@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "TDD\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7"
+  }
+}
