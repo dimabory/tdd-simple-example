@@ -27,7 +27,7 @@ class Triangle
         $this->c = $c;
     }
 
-    public function type(): int
+    public function __invoke(): int
     {
         if ($this->isEquilateral()) {
             return self::EQUILATERAL_TYPE_ID;

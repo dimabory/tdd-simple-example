@@ -12,7 +12,7 @@ final class TriangleTest extends TestCase
     {
         $triangle = new Triangle(1, 1, 1);
 
-        $this->assertSame(Triangle::EQUILATERAL_TYPE_ID, $triangle->type(), 'Triangle should be equilateral');
+        $this->assertSame(Triangle::EQUILATERAL_TYPE_ID, $triangle(), 'Triangle should be equilateral');
     }
 
     /**
@@ -22,7 +22,7 @@ final class TriangleTest extends TestCase
     {
         $triangle = new Triangle(...$chunks);
 
-        $this->assertSame(Triangle::ISOSCELES_TYPE_ID, $triangle->type(), 'Triangle should be isosceles');
+        $this->assertSame(Triangle::ISOSCELES_TYPE_ID, $triangle(), 'Triangle should be isosceles');
     }
 
     public function testValidity()
@@ -31,7 +31,7 @@ final class TriangleTest extends TestCase
 
         $this->assertSame(
             Triangle::UNJUSTIFIED_TYPE_ID,
-            $triangle->type(),
+            $triangle(),
             'Triangle should be valid with provided chunks'
         );
     }
